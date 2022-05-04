@@ -1,0 +1,35 @@
+.wave1
+{
+    position: relative;
+    bottom: 700px;
+right: 30px;   
+ z-index: -1;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.wave2
+{
+    position: relative;
+    bottom: 400px;
+right: 100px;  
+width: 400px; 
+overflow-x: hidden;
+ z-index: -1;
+}
+
+.custxt h1
+{
+    position: relative;
+    bottom: 40vmin;
+    font-weight: bold;
+}
+
+.custxt h4
+{
+    position: relative;
+    bottom: 35vmin;
+    font-weight:lighter;
+}

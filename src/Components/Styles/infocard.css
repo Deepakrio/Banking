@@ -1,0 +1,12 @@
+.card
+{
+    background-color: #d8d8f4;
+
+}
+
+.img
+{
+    height: 70px;
+    width: 70px;
+    mix-blend-mode: darken;
+}

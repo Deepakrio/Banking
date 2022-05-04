@@ -1,0 +1,37 @@
+[
+    {
+        "loanintrest" : "ROI : 10.2%",
+        "type" : "Business Loan",
+        "msg" : "Stay turned into the world of finance & business.",
+        "time" : "20 months installment",
+        "path": "images/assetsloan/buisness.png"
+        
+
+    },
+    {
+        "loanintrest" : "ROI : 9.2%",
+        "type" : "Personal Loan",
+        "msg" : "Stay turned into the world of finance & business.",
+        "time" : "20 months installment",
+        "path": "images/assetsloan/personalloan.png"
+        
+    },
+    {
+        "loanintrest" : "ROI : 6.2%",
+        "type" : "Gold Loan",
+        "msg" : "Stay turned into the world of finance & business.",
+        "time" : "10 months installment",
+        "path": "images/assetsloan/gold.png"
+        
+
+    },
+    {
+        "loanintrest" : "ROI : 8.2%",
+        "type" : "Education Loan",
+        "msg" : "Stay turned into the world of finance & business.",
+        "time" : "20 months installment",
+        "path": "images/assetsloan/Eduloan.png"
+       
+
+    }
+]
