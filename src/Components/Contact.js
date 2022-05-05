@@ -2,13 +2,16 @@ import React from 'react'
 import './Styles/Contact.css'
 import Cimg from './assets/3(1).png'
 
-export default function Contact(){
+export default function Contact() {
   return (
 
     <div><br></br><br></br>
       <div class="container-fluid">
         <div class="row">
+          
           <div class="col-md-5 contxt">
+          <br></br><br></br><br></br>
+
             <h1>
               Contact Us
             </h1>
@@ -28,7 +31,7 @@ export default function Contact(){
                     <div className='col-md-7'>
                       <form action='#' method='post'>
                         <div className='col-md-6'>
-                          <input type="text" placeholder="First Name*" className='required' name='fname' id='fname'  />
+                          <input type="text" placeholder="First Name*" className='required' name='fname' id='fname' />
                         </div>
                         <div className='col-md-6'>
                           <input type="text" placeholder="Last Name*" className='required' name='lname' id='lname' />
@@ -52,9 +55,13 @@ export default function Contact(){
                           <img src={Cimg} alt='Contact Image' id='cimg'></img>
                         </div>
                       </form>
+
                     </div>
                   </div>
                 </div>
+                <br></br><br></br><br></br>                      <br></br><br></br><br></br>
+
+
               </div>
             </div>
 

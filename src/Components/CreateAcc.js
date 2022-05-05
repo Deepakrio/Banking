@@ -34,6 +34,7 @@ import React, { Component } from "react";
 import Cloudimg from './assets/3.2.png';
 import './Styles/CreateAcc.css';
 import Sideimg from './assets/5.png';
+import logimg from './assets/login.png'
 
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const validation = ({ error, ...rest }) => {
@@ -121,11 +122,17 @@ export default class Form extends Component {
     const { error } = this.state;
 
     return (
+      
       <div className="row ">
+
         <div className="col-md-4 simg">
-        <img src={Sideimg} alt='Contact Image' id='simg'></img>
+        <img src={logimg} alt='Contact Image' id='simg'></img>
         </div>
+        
         <div className="container-fluid col-md-4 fullcard ">
+        <br></br><br></br><br></br>                      <br></br><br></br><br></br>
+
+
           <div className="card mt-5 login">
             <h1>Login</h1>
             <form className="card-body login " onSubmit={this.onFormSubmit}>
@@ -178,13 +185,18 @@ export default class Form extends Component {
               <div className="d-grid mt-3">
                 <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button>
               </div>
-              <div className="col-md-4 cloudimg">
+              {/* <div className="col-md-4 cloudimg">
               <img src={Cloudimg} alt='Contact Image' id='cimg'></img>
-              </div>
+              </div> */}
             </form>
           </div>
+          <br></br><br></br><br></br>                      <br></br><br></br><br></br>
+
+
         </div>
       </div>
+    
+      
     );
   }
 }

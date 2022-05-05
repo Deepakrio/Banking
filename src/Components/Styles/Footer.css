@@ -1,0 +1,23 @@
+.content
+{
+    position: relative;
+    top: 40px;
+}
+
+html
+{
+    overflow-x:hidden ;
+}
+
+.fa-brands
+{
+    color:#ebe4f9;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.fa-brands:hover
+{
+    color:white;
+}

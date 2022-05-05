@@ -11,8 +11,10 @@
 .lady
 {
     position: relative;
-    bottom: 35rem;
-    left: 0vmin;
+    bottom: 2rem;
+    right: 20vmin;
+    height: 550px;
+    mix-blend-mode: darken;
     overflow-x: hidden;
 }
 
@@ -45,6 +47,12 @@
     height: 380px;
     bottom: 300px;
 }
+
+.section1
+{
+    height:fit-content;
+}
+
 
 
 

@@ -42,6 +42,8 @@ const Invest =() => {
 
   return(
     <>
+                          <br></br><br></br><br></br>
+
     <div className="container-fluid mutxt">
       <h1 id='mutitle'>Mutual Funds</h1>
      <i> <p id='mutag'>Invest now with Minimum Risk and Get Maximum Returns</p></i><br></br>
@@ -55,6 +57,7 @@ const Invest =() => {
   <h1 id='mutitle'>Fixed Deposit</h1>
   <i> <p id='mutag'>Invest now with Zero Risk and Get Maximum Returns</p></i><br></br>
     <FixedDeposit/>
+    <br></br><br></br><br></br>
         </div>
   </>
     

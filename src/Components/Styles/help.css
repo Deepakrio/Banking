@@ -1,81 +1,47 @@
-.wave1
+.helpcnt h1
 {
     position: relative;
-    bottom:  700px;
-    right: 30px;   
-    z-index: -1;
+    font-size: 50px;
+    top: 50px;
 }
 
-html{
-    overflow-x: hidden;
-  
-}
-
-
-
-.wave2
+.helpcnt h4
 {
     position: relative;
-    bottom: 400px;
-right: 100px;  
-width: 400px; 
-
-overflow-x: hidden;
- z-index: -1;
-}
-
-.custxt h1
-{
-    position: relative;
-    bottom: 40vmin;
-    font-weight: bold;
-}
-
-.custxt h4
-{
-    position: relative;
-    bottom: 35vmin;
-    font-weight:lighter;
-}
-
-.assitant
-{
-    position: relative;
-    bottom: 160vmin;
-    right: 40vmin;
-}
-
-.cardsheet
-{
-    position: relative;
-    bottom: 200vmin;  
-    height: 600px;
-    opacity: 0.5;
-}
-
-.sheetxt
-{
-    position: relative;
-    bottom: 280vmin;
-    right: 53vmin;
-}
-
-.sheetxt h1
-{
-    text-align: left;
-}
-
-.sheetxt p
-{
-    text-align: left;
-    font-size: 18px;
     font-weight: lighter;
+    top: 50px;
 }
 
-#helpbtn
+.htitle
 {
     position: relative;
-    height: 50px;
-    width: 200px;
-    right: 70px;
+    width: 300px;
+    top: 250px;
+    left: 80px;
+}
+
+#helpimg
+{
+    position: relative;
+    bottom: 150px;
+    mix-blend-mode: darken;
+}
+
+.htitle h1
+{
+font-size: 25px;
+text-align: left;
+}
+
+.htitle p
+{
+font-size: 18px;
+text-align: left;
+position: relative;
+top: 80px;
+}
+
+html
+{
+    overflow-x: hidden;
 }

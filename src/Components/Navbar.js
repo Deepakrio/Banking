@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 export default function NavBar() {
   return (
     <div>
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top">
   <div className="container-fluid">
     {/* <a className="navbar-brand" href="/">Dlithe Bank Inc</a> */}
     <Link to="/" className="navtitle">Dlithe Bank Inc</Link>

@@ -4,6 +4,12 @@
 
 }
 
+.cardbg:hover
+{
+    background-color: rgb(232,166,141);
+
+}
+
 .img
 {
     height: 70px;
