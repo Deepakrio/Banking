@@ -7,7 +7,8 @@ export default function NavBar() {
     <div>
     <nav className="navbar navbar-expand-lg navbar-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">Crown Bank Inc</a>
+    {/* <a className="navbar-brand" href="/">Dlithe Bank Inc</a> */}
+    <Link to="/" className="navtitle">Dlithe Bank Inc</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -21,9 +22,9 @@ export default function NavBar() {
         <li className="nav-item pl-5 mt-3">
         <li className="nav-link active" aria-current="page"><Link to="invest" className="navText">Invest</Link></li> 
         </li>
-        <li className="nav-item dropdown pl-5 ">
-          <a className="nav-link dropdown-toggle navText" href="service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
+        <li className="nav-item dropdown pl-5">
+          <a className="nav-link dropdown-toggle"href="service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <span className="navText">Services</span>
           </a>
           <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
           <li className="nav-link active" aria-current="page"><Link to="mutual" className="navText">Mutual Funds</Link></li> 

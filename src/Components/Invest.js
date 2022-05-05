@@ -14,6 +14,7 @@ import Data from '../data/investdata.json'
 import './Styles/Invest.css'
 
 const Invest =() => {
+  
 
   const InvestCards =(cards,index) =>
   {
@@ -32,14 +33,15 @@ const Invest =() => {
             <a href="#" className="btn btn-primary">Apply Now</a>
           </div>
         </div>
-      </div>
-  
+      </div>  
     )
 
   }
 
   return(
-    <div className="container-fluid">
+    <div className="container-fluid mutxt">
+      <h1 id='mutitle'>Mutual Funds</h1>
+     <i> <p id='mutag'>Invest now with Minimum Risk and Get Maximum Returns</p></i><br></br>
     <div className='row'>
       {Data.map(InvestCards)}
 

@@ -7,8 +7,26 @@ button
 {
 position: relative;
 margin-left: 7rem;
-bottom: 1rem;
+bottom: 5px;
+width: 150px;
 }
+
+.navtitle
+{
+    color: white;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navtitle:hover
+{
+    
+    color: white;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
 
 .navbar 
 {
@@ -21,6 +39,7 @@ bottom: 1rem;
     font-weight: bold;
 
 }
+
 
 .buttontxt
 {
