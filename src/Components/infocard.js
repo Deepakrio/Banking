@@ -24,7 +24,7 @@ const InfoCard =() => {
       </div>
   
     )
-
+  
   }
 
   return(

@@ -12,6 +12,8 @@
 import React from 'react'
 import Data from '../data/investdata.json'
 import './Styles/Invest.css'
+import FixedDeposit from './FixedDeposit'
+
 
 const Invest =() => {
   
@@ -39,6 +41,7 @@ const Invest =() => {
   }
 
   return(
+    <>
     <div className="container-fluid mutxt">
       <h1 id='mutitle'>Mutual Funds</h1>
      <i> <p id='mutag'>Invest now with Minimum Risk and Get Maximum Returns</p></i><br></br>
@@ -47,6 +50,13 @@ const Invest =() => {
 
       </div>
   </div>
+
+  <div className='container-fluid'>
+  <h1 id='mutitle'>Fixed Deposit</h1>
+  <i> <p id='mutag'>Invest now with Zero Risk and Get Maximum Returns</p></i><br></br>
+    <FixedDeposit/>
+        </div>
+  </>
     
   )
 }

@@ -19,6 +19,7 @@ html{
     bottom: 400px;
 right: 100px;  
 width: 400px; 
+
 overflow-x: hidden;
  z-index: -1;
 }
