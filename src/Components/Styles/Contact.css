@@ -10,3 +10,103 @@ font-weight: bold;
 text-align: left;
 font-weight: lighter;
 }
+
+.formspace
+{
+    background-color: #f5f5ff  ;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    /* right: 55vmin; */
+    left: 8rem;
+    top: 10vmin;
+}
+
+form
+{
+    position: relative;
+    border: 2px black;
+    top: 10vmin;
+}
+
+#fname
+{
+    position: relative;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#lname
+{
+    position: relative;
+    right:8vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#email
+{
+    position: relative;
+    width: 465px;
+    height: 45px;
+    top: 1vmin;
+    right: 4vmin;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#phone
+{
+    position: relative;
+    top: 2vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#address
+{
+    position: relative;
+    top: 2vmin;
+    right:8vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#write
+{
+    position: relative;
+    top: 3vmin;
+    right: 4vmin;
+    width: 465px;
+    height: 200px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#conbtn
+{
+    position: relative;
+    top: 3vmin;
+    width: 150px;
+    right: 34vmin;
+    border-radius: 50px;
+    
+}
+
+#cimg
+{
+    position: relative;
+    bottom: 70vmin;
+    height: 500px;
+    width: 500px;
+    left: 500px;
+    
+}

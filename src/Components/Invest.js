@@ -1,9 +1,68 @@
+// import React from 'react'
+
+
+// export default function Invest() {
+//   return (
+//     <div>
+// Invest</div>
+//   )
+// }
+
+
 import React from 'react'
+import Data from '../data/investdata.json'
+import './Styles/Invest.css'
 
+const Invest =() => {
 
-export default function Invest() {
-  return (
-    <div>
-Invest</div>
+  const InvestCards =(cards,index) =>
+  {
+    return(
+    
+      <div className="col-md-3 ">
+        <div className="card Invest cardbg" key={index}>
+          <div className="card-body">
+         <img src={cards.path} class="img" />
+          <h1 className="card-title">{cards.type}</h1>
+            <h3 className='card-text'>{cards.name}</h3>
+            <h2 className='card-text'>{cards.CAGR}</h2>
+            <p className="card-text">{cards.msg}</p>
+            <h4 className="card-title">{cards.time}</h4>
+            <br></br>
+            <a href="#" className="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+  
+    )
+
+  }
+
+  return(
+    <div className="container-fluid">
+    <div className='row'>
+      {Data.map(InvestCards)}
+
+      </div>
+  </div>
+    
   )
 }
+
+export default Invest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -24,6 +24,8 @@ export default function Home() {
 
           <InfoCard />
           <Help/>
+         
+
         </div>
       </div>
 

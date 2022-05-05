@@ -1,12 +1,72 @@
-.container
-{
-    margin-top: 12rem;
-    width: 300px;
-}
-
-.btnctrl
+.login
 {
     position: relative;
-    right: 30px;
-    width: 100px;
+    height: 300px;
+    background-color: #f5f5ff  ;
+    border: none;
+}
+
+.fullcard
+{
+    position: relative;
+    right: 200px;
+}
+
+#loginame
+{
+    position: relative;
+    width: 330px;
+    height: 45px;
+    left: 30px;
+    bottom: 40px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#loginemail
+{
+    position: relative;
+    width: 330px;
+    height: 45px;
+    left: 30px;
+    bottom: 40px;
+    border-color: transparent;
+    background-color: #e4dcf4; 
+}
+
+#loginpwd
+{
+    position: relative;
+    width: 330px;
+    height: 45px;
+    left: 30px;
+    bottom: 40px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#loginbtn
+{
+    position: relative;
+    width: 150px;
+   right: 6vmin;
+   bottom: 0px;
+
+    border-radius: 50px;
+}
+
+.cloudimg
+{
+    position: relative;
+    top: 9vmin;
+    z-index: -1;
+    right: 200px;
+}
+
+.simg
+{
+    position: relative;
+    bottom: 50vmin;
+    z-index: -1;
+   
 }

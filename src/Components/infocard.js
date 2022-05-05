@@ -9,7 +9,7 @@ const InfoCard =() => {
     return(
     
       <div className="col-md-3 ">
-        <div className="card infocard" key={index}>
+        <div className="card infocard cardbg" key={index}>
           <div className="card-body">
          <img src={cards.path} class="img" />
           <h1 className="card-title">{cards.type}</h1>
