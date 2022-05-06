@@ -54,7 +54,7 @@ form
     width: 465px;
     height: 45px;
     top: 1vmin;
-    right: 4vmin;
+    right: 0vmin;
     border-color: transparent;
     background-color: #e4dcf4;
 }
@@ -84,7 +84,7 @@ form
 {
     position: relative;
     top: 3vmin;
-    right: 4vmin;
+    right: 6vmin;
     width: 465px;
     height: 200px;
     border-color: transparent;
@@ -94,9 +94,12 @@ form
 #conbtn
 {
     position: relative;
-    top: 3vmin;
+    top: 5vmin;
     width: 150px;
     right: 34vmin;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
     border-radius: 50px;
     
 }
@@ -105,16 +108,55 @@ form
 {
     position: relative;
     font-size: 10px;
+    /* right: 50px; */
     color: black;
     z-index: 2;
 }
 
+.errmsglname
+{
+    position: relative;
+    font-size: 10px;
+    right: 100px;
+    color: black;
+    z-index: 2;
+}
+
+.errmsgemail
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 230px;
+    color: black;
+    z-index: 2;
+
+}
+
+.errmsgphone
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 70px;
+    color: black;
+    z-index: 2; 
+}
+
+.errmsgaddress
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 140px;
+    color: black;
+    z-index: 2;
+}
 #cimg
 {
     position: relative;
-    bottom: 50vmin;
+    bottom: 350px;
     height: 400px;
     width: 400px;
     left: 500px;
-    
 }

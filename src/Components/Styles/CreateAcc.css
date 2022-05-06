@@ -15,6 +15,7 @@
 {
     position: relative;
     right: 200px;
+    top: 30px;
 }
 
 #loginame
@@ -58,8 +59,9 @@
 #loginbtn
 {
     position: relative;
+    height: 50px;
     width: 150px;
-   right: 6vmin;
+    left: 7vmin;
    bottom: 0px;
 
     border-radius: 50px;

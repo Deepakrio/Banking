@@ -32,7 +32,7 @@ const Invest =() => {
             <p className="card-text">{cards.msg}</p>
             <h4 className="card-title">{cards.time}</h4>
             <br></br>
-            <a href="#" className="btn btn-primary">Apply Now</a>
+            <a href="#" className="btn btn-primary">Invest Now</a>
           </div>
         </div>
       </div>  

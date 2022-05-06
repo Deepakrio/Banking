@@ -4,6 +4,9 @@ import Cimg from './assets/3(1).png'
 import { Component } from 'react'
 
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
+const regularExpression1 = RegExp(/^[0-9]{10}$/)
+
+
 const validation = ({ error, ...rest }) => {
   let checkValidation = false;
 
@@ -33,12 +36,17 @@ export default class Contact extends Component {
 
     this.state = {
       name: '',
+      lname: '',
       email: '',
-      password: '',
+      phone: '',
+      address: '',
+
       error: {
         name: '',
+        lname: '',
         email: '',
-        password: ''
+        phone: '',
+        address: ''
       }
     }
   }
@@ -65,14 +73,19 @@ export default class Contact extends Component {
       case "name":
         error.name = value.length < 5 ? "Name should be 5 characters long" : "";
         break;
+      case "lname":
+        error.lname = value.length < 3 ? "Lname should be 3 characters long" : "";
       case "email":
         error.email = regularExpression.test(value)
           ? ""
           : "Email is not valid";
         break;
-      case "password":
-        error.password =
-          value.length < 5 ? "Password should 5 characters long" : "";
+      case "phone":
+        error.phone = regularExpression1.test(value)
+          ? ""
+          : "Invalid Phone number";
+      case "address":
+        error.address = value.length < 4 ? "Enter full Address" : "";
         break;
       default:
         break;
@@ -122,42 +135,69 @@ export default class Contact extends Component {
                               id='fname'
                               className={error.name.length > 0 ? "is-invalid form-control" : "form-control"}
                               onChange={this.formObject}
-                               />
+                            />
 
                             {error.name.length > 0 && (
                               <span className="errmsg">{error.name}</span>
                             )}
                           </div>
-{/* 
-                          <div className="form-group mb-3">
-                            <input
-                              required
-                              type="password"
-                              name="password"
-                              placeholder="Password"
-                              id="loginpwd"
-                              className={error.password.length > 0 ? "is-invalid form-control" : "form-control"}
+                          <div className='col-md-6'>
+                            <input type="text"
+                              placeholder="Last Name*"
+                              name='lname'
+                              id='lname'
+                              className={error.lname.length > 0 ? "is-invalid form-control" : "form-control"}
+                              onChange={this.formObject}
+                            />
+
+                            {error.lname.length > 0 && (
+                              <span className="errmsglname">
+                                {error.lname}</span>
+                            )}
+                          </div>
+                          <div className='col-md-12'>
+                            <input type="text"
+                              placeholder="Email*"
+                              name='email'
+                              id='email'
+                              className={error.email.length > 0 ? "is-invalid form-control" : "form-control"}
                               onChange={this.formObject} />
 
-                            {error.password.length > 0 && (
-                              <span className="invalid-feedback">{error.password}</span>
+                            {error.email.length > 0 && (
+                              <span className="errmsgemail">{error.email}</span>
                             )}
-                          </div> */}
+                          </div>
+                          <div className='col-md-6'>
+                            <input type="text"
+                              placeholder="Phone*"
+                              name='phone'
+                              id='phone'
+                              className={error.phone.length > 0 ? "is-invalid form-control" : "form-control"}
+                              onChange={this.formObject} />
 
+                            {error.phone.length > 0 && (
+                              <span className="errmsgphone">{error.phone}</span>
+                            )}
+                          </div>
                           <div className='col-md-6'>
-                            <input type="text" placeholder="Last Name*" className='required' name='lname' id='lname' />
+                            <input type="text"
+                              placeholder="Address*"
+                              name='address'
+                              id='address' 
+                              className={error.address.length > 0 ? "is-invalid form-control" : "form-control"}
+                              onChange={this.formObject}
+                            />
+
+                            {error.address.length > 0 && (
+                              <span className="errmsgaddress">{error.address}</span>
+                            )}
                           </div>
                           <div className='col-md-12'>
-                            <input type="text" placeholder="Email*" className='required' name='email' id='email' />
-                          </div>
-                          <div className='col-md-6'>
-                            <input type="text" placeholder="Phone*" className='required' name='phone' id='phone' />
-                          </div>
-                          <div className='col-md-6'>
-                            <input type="text" placeholder="Address*" className='required' name='address' id='address' />
-                          </div>
-                          <div className='col-md-12'>
-                            <input type="text" placeholder="Write here..." className='required' name='write' id='write' />
+                            <input type="text"
+                              placeholder="Write here..."
+                              className='required'
+                              name='write'
+                              id='write' />
                           </div>
                           <div className='col-md-12'>
                             <button type="submit" class="btn btn-primary" id='conbtn'>Send Message</button>
