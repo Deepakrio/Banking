@@ -1,0 +1,204 @@
+.contxtsi h1
+{
+text-align: left;
+font-weight: bold;
+}
+
+
+.contxtsi h4
+{
+text-align: left;
+font-weight: lighter;
+}
+
+.formspacesi
+{
+    background-color: #f5f5ff  ;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    /* right: 55vmin; */
+    left: 8rem;
+    top: 10vmin;
+}
+
+form
+{
+    position: relative;
+    border: 2px black;
+    top: 10vmin;
+}
+
+#fnamesi
+{
+    position: relative;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#lnamesi
+{
+    position: relative;
+    right:8vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#emailsi
+{
+    position: relative;
+    width: 465px;
+    height: 45px;
+    top: 1vmin;
+    right: 0vmin;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#accsi
+{
+    position: relative;
+    width: 465px;
+    height: 45px;
+    top: 3vmin;
+    right: 0vmin;
+    border-color: transparent;
+    background-color: #e4dcf4; 
+}
+
+#phonesi
+{
+    position: relative;
+    top: 2vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#pwdsi
+{
+    position: relative;
+    top: 4vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4; 
+}
+
+#cnfpwdsi
+{
+    position: relative;
+    top: 4vmin;
+    width: 230px;
+    height: 45px;
+    right: 50px;
+    border-color: transparent;
+    background-color: #e4dcf4;  
+}
+
+#addresssi
+{
+    position: relative;
+    top: 2vmin;
+    right:8vmin;
+    width: 230px;
+    height: 45px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#writesi
+{
+    position: relative;
+    top: 3vmin;
+    right: 6vmin;
+    width: 465px;
+    height: 200px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#conbtnsi
+{
+    position: relative;
+    top: 10vmin;
+    width: 250px;
+    right: 12vmin;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 50px;
+    
+}
+
+.errmsgsi
+{
+    position: relative;
+    font-size: 10px;
+    /* right: 50px; */
+    color: black;
+    z-index: 2;
+}
+
+.errmsglnamesi
+{
+    position: relative;
+    font-size: 10px;
+    right: 100px;
+    color: black;
+    z-index: 2;
+}
+
+.errmsgemailsi
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 230px;
+    color: black;
+    z-index: 2;
+
+}
+
+.errmsgpwdsi
+{
+    position: relative;
+    font-size: 10px;
+    top: 22px;
+    right: 50px;
+    color: black;
+    z-index: 2; 
+}
+
+.errmsgphonesi
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 70px;
+    color: black;
+    z-index: 2; 
+}
+
+.errmsgaddresssi
+{
+    position: relative;
+    font-size: 10px;
+    top: 10px;
+    right: 140px;
+    color: black;
+    z-index: 2;
+}
+#cimgsi
+{
+    position: relative;
+    bottom: 300px;
+    height: 400px;
+    width: 450px;
+    left: 500px;
+}

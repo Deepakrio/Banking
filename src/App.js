@@ -11,6 +11,7 @@ import Fd from './Components/Fd';
 import Demat from './Components/Demat';
 import CreateAcc from './Components/CreateAcc';
 import Footer from './Components/Footer';
+import Signup from './Components/Signup';
 import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
          <Route exact path="fd" element={<Fd/>}/>
          <Route exact path="demat" element={<Demat/>}/>
          <Route exact path="create" element={<CreateAcc/>}/>
+         <Route exact path="signup" element={<Signup/>}/>
+
        </Routes>
 <Footer/>
      </div>

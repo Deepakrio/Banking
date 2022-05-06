@@ -40,6 +40,11 @@ width: 150px;
 
 }
 
+.signupbtn
+{
+    position: relative;
+    right: 27vmin;
+}
 
 .buttontxt
 {
@@ -61,6 +66,11 @@ width: 150px;
 
 }
 
+.loginbtn
+{
+    position: relative;
+    right: 70px;
+}
 
 
 /* ***************************Media Queries**************************** */

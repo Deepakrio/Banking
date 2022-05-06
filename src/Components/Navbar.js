@@ -8,7 +8,7 @@ export default function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top">
   <div className="container-fluid">
     {/* <a className="navbar-brand" href="/">Dlithe Bank Inc</a> */}
-    <Link to="/" className="navtitle">Dlithe Bank Inc</Link>
+    <Link to="/" className="navtitle">DlitheBank.Inc</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -42,7 +42,11 @@ export default function NavBar() {
         {/* <button type="button" className="btn btn-primary"><Link to="create" className="navText"></Link>Create Account</button> */}
         
         <li className="nav-item pl-5 mt-3">
-        <button type="button" className="btn btn-primary"><li className="nav-link active" aria-current="page"><Link to="create" className="buttontxt">Login</Link></li></button>
+        <button type="button" className="btn btn-primary loginbtn"><li className="nav-link active" aria-current="page"><Link to="create" className="buttontxt">Login</Link></li></button>
+        </li>
+
+        <li className="nav-item pl-5 mt-3">
+        <button type="button" className="btn btn-primary signupbtn"><li className="nav-link active" aria-current="page"><Link to="signup" className="buttontxt">Sign up</Link></li></button>
         </li>
 
       </ul>

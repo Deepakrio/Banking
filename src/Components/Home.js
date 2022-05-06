@@ -6,9 +6,15 @@ import Invest from './Invest'
 import Help from './help'
 import Welpic from './assets/welcome.png'
 import './Styles/Home.css'
+import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
+import Contact from './Contact'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Home() {
+  let navigate = useNavigate();
   return (
+    
     <main>
       <section>
     <div className='section1' >
@@ -17,7 +23,7 @@ export default function Home() {
           <div className="col-md-4 welcome">
             <h1>The right decision at the right time.</h1>
             <p>We are here to help you when you need your financial support, then we are help you.</p>
-            <button type="button" class="btn btn-primary">Contact Us</button>
+            <button type="button" onClick={() => {navigate("/Contact")}} class="btn btn-primary">Contact us</button>            
           </div>
           <div className="col-md-8">
           <img src={Welpic} className="lady" alt='lady'></img> 
