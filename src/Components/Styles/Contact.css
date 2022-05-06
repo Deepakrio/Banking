@@ -101,6 +101,14 @@ form
     
 }
 
+.errmsg
+{
+    position: relative;
+    font-size: 10px;
+    color: black;
+    z-index: 2;
+}
+
 #cimg
 {
     position: relative;

@@ -28,17 +28,22 @@
     background-color: #e4dcf4;
 }
 
-#loginemail
-{
-    position: relative;
-    width: 330px;
-    height: 45px;
-    left: 30px;
-    bottom: 40px;
-    border-color: transparent;
-    background-color: #e4dcf4; 
-}
+    #loginemail
+    {
+        position: relative;
+        width: 330px;
+        height: 45px;
+        left: 30px;
+        bottom: 40px;
+        border-color: transparent;
+        background-color: #e4dcf4; 
+    }
 
+    .invalid-feedback
+    {
+        position: relative;
+        bottom: 40px;
+    }
 #loginpwd
 {
     position: relative;
