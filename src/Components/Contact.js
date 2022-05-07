@@ -2,6 +2,7 @@ import React from 'react'
 import './Styles/Contact.css'
 import Cimg from './assets/3(1).png'
 import { Component } from 'react'
+import Navbar from './Navbar';
 
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const regularExpression1 = RegExp(/^[0-9]{10}$/)
@@ -101,7 +102,9 @@ export default class Contact extends Component {
 
     return (
 
-      <div><br></br><br></br>
+      <div>
+              {/* <Navbar/> */}
+        <br></br><br></br>
         <div class="container-fluid">
           <div class="row">
 

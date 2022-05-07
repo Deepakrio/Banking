@@ -5,10 +5,10 @@
 
 button
 {
-position: relative;
-margin-left: 7rem;
-bottom: 5px;
-width: 150px;
+    position: relative;
+    margin-left: 7rem;
+    bottom: 5px;
+    width: 150px;
 }
 
 .navtitle

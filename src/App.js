@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import NavBar from './Components/Navbar';
 import Contact from './Components/Contact';
 import Invest from './Components/Invest';
@@ -12,14 +12,17 @@ import Demat from './Components/Demat';
 import CreateAcc from './Components/CreateAcc';
 import Footer from './Components/Footer';
 import Signup from './Components/Signup';
+import React from 'react';
 import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-     <div>
+    <div className='App'>
+      {/* <CreateAcc/> */}
+      <NavBar/> 
+     
+     
        <Routes>
-         <Route exact path="/" element={<Home/>}/>
+         <Route exact path="/" element={<CreateAcc/>}/>
          <Route exact path="home" element={<Home/>}/>
          <Route exact path="invest" element={<Invest/>}/>
          <Route exact path="contact" element={<Contact/>}/>
@@ -28,14 +31,19 @@ function App() {
          <Route exact path="mutual" element={<Mutal/>}/>
          <Route exact path="fd" element={<Fd/>}/>
          <Route exact path="demat" element={<Demat/>}/>
-         <Route exact path="create" element={<CreateAcc/>}/>
-         <Route exact path="signup" element={<Signup/>}/>
+         <Route exact path="create" element={<CreateAcc/>}/> 
+          <Route exact path="signup" element={<Signup/>}/>
 
        </Routes>
 <Footer/>
-     </div>
-    </div>
+     </div> 
   );
 }
 
 export default App;
+
+
+
+
+
+

@@ -35,6 +35,18 @@ import Cloudimg from './assets/3.2.png';
 import './Styles/CreateAcc.css';
 import Sideimg from './assets/5.png';
 import logimg from './assets/login.png'
+import { useNavigate } from 'react-router-dom'
+
+
+ function CreateAcc() {
+  let navigate = useNavigate();
+  return (
+  <div className="d-grid mt-3"> 
+                {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
+                 <button type="submit" onClick={() => {navigate("/home")}}  id="loginbtn" class="btn btn-block btn-primary">Submit</button>            
+              </div>  )
+}
+
 
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const validation = ({ error, ...rest }) => {
@@ -60,6 +72,7 @@ const validation = ({ error, ...rest }) => {
 };
 
 export default class Form extends Component {
+
 
   constructor(props) {
     super(props)
@@ -118,10 +131,10 @@ export default class Form extends Component {
   };
 
   render() {
-
     const { error } = this.state;
 
     return (
+
       
       <div className="row ">
 
@@ -134,7 +147,7 @@ export default class Form extends Component {
 
 
           <div className="card mt-5 login">
-            <h1>Login</h1>
+           <center><h1>Login</h1></center> 
             <form className="card-body login " onSubmit={this.onFormSubmit}>
 
               <div className="form-group mb-3">
@@ -181,10 +194,11 @@ export default class Form extends Component {
                   <span className="invalid-feedback">{error.password}</span>
                 )}
               </div>
-
-              <div className="d-grid mt-3">
-                <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button>
-              </div>
+                  <CreateAcc/>
+              {/* <div className="d-grid mt-3"> */}
+                {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
+                {/* <button type="submit" onClick={() => {navigate("/home")}}  id="loginbtn" class="btn btn-block btn-primary">Submit</button>            
+              </div> */}
               {/* <div className="col-md-4 cloudimg">
               <img src={Cloudimg} alt='Contact Image' id='cimg'></img>
               </div> */}

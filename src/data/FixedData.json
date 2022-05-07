@@ -1,31 +1,31 @@
 [
     {
-        "roi" : "7.2% PA",
+        "roi" : "ROI : 7.2% PA",
         "type" : "Fixed Deposite (FD)",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Maturity Period : 1Y",
+        "time" : "Period : 1Y | Min 10000/-",
         "path": "images/assetsInvest/FixedDeposit.png"
     },
     {
-        "roi" : "8.5% PA",
+        "roi" : "ROI : 8.5% PA",
         "type" : "Fixed Deposite (Senior)",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Maturity Period : 1Y",
+        "time" : "Period : 1Y | Min 10000/-",
         "path": "images/assetsInvest/FixedDeposit.png"
         
     },
     {
-        "roi" : "7.0% PA",
+        "roi" : "ROI : 7.0% PA",
         "type" : "Recuring Deposite",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Maturity Period : 1Y",
+        "time" : "Period : 1Y | Min 10000/-",
         "path": "images/assetsInvest/FixedDeposit.png"
     },
     {
-        "roi" : "9.2% PA",
+        "roi" : "ROI : 9.2% PA",
         "type" : "Child Welfare Fund",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Maturity Period : 1Y",
+        "time" : "Period : 1Y | Min 10000/-",
         "path": "images/assetsInvest/FixedDeposit.png"
        
 

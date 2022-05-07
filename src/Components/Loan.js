@@ -1,9 +1,24 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from "react";
+import ldata from '../data/FixedData.json'
 
-export default function Loan() {
-    return (
-        <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium totam modi illum in facilis quos pariatur commodi, perferendis a deleniti quas autem officia? Voluptatibus ducimus minus placeat quasi natus.</h1>
-        </div>
-    )
+
+function Loan() {
+  const [users , setUsers] = useState([]);
+  useEffect(()=>{
+    const fetchData = async() => {
+      const response = await axios.get("https://localhost:7203/api/Artists");
+      setUsers(response.data)
+    }
+    fetchData();
+  },[])
+
+  return (
+    <div>
+      <h1>List of Users</h1>
+      {users.map(item=>(<li>{item.artistId}<br></br>{item.artistName}<br></br></li>))}
+    </div>
+  );
 }
+
+export default Loan;

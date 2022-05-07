@@ -10,14 +10,14 @@ export default function Help() {
     return (
         <div>
             <div className='container-fluid helpcnt'>
-                <h1>
+            <center>   <h1>
                     Our most
                     honorable customer
-                </h1>
-                <h4>
+                </h1></center> 
+              <center>  <h4>
                     <i>We are here to help you when you need your financial
                         support.</i>
-                </h4>
+                </h4></center>
                 <div className='htitle'>
                     <h1>Our manager will contact you to clear the details. </h1>
                     <p>

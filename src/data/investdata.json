@@ -4,7 +4,7 @@
         "type" : "Index Fund",
         "name" : "HDFC Index Funds",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Min 1 Year SIP",
+        "time" : "Min 1 Year SIP | INR 1000/- SIP",
         "path": "images/assetsInvest/Mutualfunds.png"
     },
     {
@@ -12,7 +12,7 @@
         "type" : "Flexi-Cap Fund",
         "name" : "Parag-Pareik Funds",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Min 1 Year SIP",
+        "time" : "Min 1 Year SIP | INR 1000/- SIP",
         "path": "images/assetsInvest/Mutualfunds.png"
         
     },
@@ -21,7 +21,7 @@
         "type" : "Small-Cap Fund",
         "name" : "Axis Small Cap Funds",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Min 1 Year SIP",
+        "time" : "Min 1 Year SIP | INR 1000/- SIP",
         "path": "images/assetsInvest/Mutualfunds.png"
 
     },
@@ -30,7 +30,7 @@
         "type" : "Large Cap Fund",
         "name" : "Axis Bluechip Funds",
         "msg" : "Stay turned into the world of investing.",
-        "time" : "Min 1 Year SIP",
+        "time" : "Min 1 Year SIP | INR 1000/- SIP",
         "path": "images/assetsInvest/Mutualfunds.png"
        
 

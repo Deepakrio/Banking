@@ -1,10 +1,21 @@
-#mutitle
+.cardbgm
 {
-font-size: 60px ;
+    background-color: #d8d8f4;
+
 }
 
-#mutag
+.cardbgm:hover
 {
-font-size: 18px ;
+    background-color: rgb(232,166,141);
+
+}
+
+.imgm
+{
+    position: relative;
+    left: 100px;
+    height: 70px;
+    width: 70px;
+    mix-blend-mode: darken;
 }
 

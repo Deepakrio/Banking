@@ -12,7 +12,28 @@
 
 .img
 {
+    position: relative;
+    left: 100px;
     height: 70px;
     width: 70px;
     mix-blend-mode: darken;
+}
+
+#mutitle
+{
+    position: relative;
+    left: 68vmin;
+}
+
+#mutag
+{
+    position: relative;
+    left: 72vmin;
+}
+
+#ibtn
+{
+    position: relative;
+    right: 35px;
+    width: 100px;
 }

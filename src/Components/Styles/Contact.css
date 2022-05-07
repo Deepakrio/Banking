@@ -84,7 +84,7 @@ form
 {
     position: relative;
     top: 3vmin;
-    right: 6vmin;
+    right: 0vmin;
     width: 465px;
     height: 200px;
     border-color: transparent;
@@ -96,7 +96,7 @@ form
     position: relative;
     top: 5vmin;
     width: 150px;
-    right: 34vmin;
+    right: 12vmin;
     height: 50px;
     font-size: 17px;
     font-weight: 500;

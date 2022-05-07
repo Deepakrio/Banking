@@ -18,7 +18,7 @@ const FixedDeposit =() => {
             <p className="card-text">{cards.msg}</p>
             <h4 className="card-title">{cards.time}</h4>
             <br></br>
-            <a href="#" className="btn btn-primary">Apply Now</a>
+            <center> <a href="https://rzp.io/i/lpJjL0iuVw" target='_blank' className="btn btn-primary">Invest Now</a></center>  
           </div>
         </div>
       </div>
