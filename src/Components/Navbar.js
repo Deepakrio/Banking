@@ -36,7 +36,7 @@ export default function NavBar() {
           </ul>
         </li>
         <li className="nav-item pl-5 mt-3">
-        <li className="nav-link active" aria-current="page"><Link to="loan" className="navText">Loan</Link></li> 
+        <li className="nav-link active" aria-current="page"><Link to="passbook" className="navText">Passbook</Link></li> 
         </li>
         <li className="nav-item pl-5 mt-3">
         <li className="nav-link active" aria-current="page"><Link to="contact" className="navText">Contact</Link></li> 

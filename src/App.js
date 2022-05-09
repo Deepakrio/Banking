@@ -12,6 +12,8 @@ import Demat from './Components/Demat';
 import CreateAcc from './Components/CreateAcc';
 import Footer from './Components/Footer';
 import Signup from './Components/Signup';
+// import PassBookInfo from './Components/PassBookInfo';
+import PassBook from './Components/PassBook';
 import React from 'react';
 import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 function App() {
@@ -26,7 +28,7 @@ function App() {
          <Route exact path="home" element={<Home/>}/>
          <Route exact path="invest" element={<Invest/>}/>
          <Route exact path="contact" element={<Contact/>}/>
-         <Route exact path="loan" element={<Loan/>}/>
+         <Route exact path="passbook" element={<PassBook/>}/>
          <Route exact path="service" element={<Services/>}/>
          <Route exact path="mutual" element={<Mutal/>}/>
          <Route exact path="fd" element={<Fd/>}/>
@@ -35,7 +37,7 @@ function App() {
           <Route exact path="signup" element={<Signup/>}/>
 
        </Routes>
-<Footer/>
+{/* <Footer/> */}
      </div> 
   );
 }
