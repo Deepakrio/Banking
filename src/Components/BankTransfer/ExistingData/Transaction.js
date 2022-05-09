@@ -21,7 +21,8 @@ const Transaction = (props) => {
         /> */}
         {props.items.map((expense) => (
           <TransactionInfo
-            title={expense.title}
+            name={expense.name}
+            accno={expense.accno}
             amount={expense.amount}
             date={expense.date}
           />

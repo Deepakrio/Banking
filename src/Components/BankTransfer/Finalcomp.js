@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import Transaction from '../BankTransfer/ExistingData/Transaction'
-import NewTransaction from './NewData/NewTransaction';
+import Transaction from "../BankTransfer/ExistingData/Transaction";
+import NewTransaction from "./NewData/NewTransaction";
 const DUMMY_EXPENSES = [
   {
-    id: 'e1',
-    title: 'Toilet Paper',
-    amount: 94.12,
+    id: "1",
+    name: "Deepak C R",
+    accno: 1898765564,
+    amount: 1000,
     date: new Date(2020, 7, 14),
   },
-  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
   {
-    id: 'e3',
-    title: 'Car Insurance',
-    amount: 294.67,
-    date: new Date(2021, 2, 28),
+    id: "2",
+    name: "Rohan  H K",
+    accno: 2312765534,
+    amount: 20500,
+    date: new Date(2020, 7, 14),
   },
   {
-    id: 'e4',
-    title: 'New Desk (Wooden)',
-    amount: 450,
-    date: new Date(2021, 5, 12),
+    id: "3",
+    name: "Sridhar A",
+    accno: 9087765784,
+    amount: 5000,
+    date: new Date(2020, 7, 14),
+  },
+  {
+    id: "4",
+    name: "Nishita K",
+    accno: 1898765564,
+    amount: 1000,
+    date: new Date(2020, 7, 14),
   },
 ];
 
@@ -42,10 +51,13 @@ const App = () => {
 
   return (
     <div>
-      
-      <br></br><br></br><br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <NewTransaction onAddExpense={addExpenseHandler} />
-      <br></br><br></br><br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Transaction items={expenses} />
     </div>
   );

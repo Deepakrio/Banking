@@ -10,7 +10,8 @@ const TransactionInfo = (props) => {
    <Card className='expense-item'>
       <TransactionDate date={props.date} />
       <div className='expense-item__description'>
-        <h2 id='titlefont'>{props.title}</h2>
+        <h2 id='titlefont'>{props.name}</h2>
+        <h2 id='titlefont'>{props.accno}</h2>
         <div className='expense-item__price'>${props.amount}</div>
       </div>
     </Card>
