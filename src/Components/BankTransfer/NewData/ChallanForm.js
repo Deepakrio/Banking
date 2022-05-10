@@ -67,6 +67,10 @@ const ChallanForm = (props) => {
 
   return (
     <div id="formlayout">
+      <center>
+        <h1 id="transfertitle">Online Money Transfer</h1>
+      </center>
+
       <form onSubmit={submitHandler}>
         <div className="new-expense__controls">
           <div className="new-expense__control">
@@ -77,7 +81,7 @@ const ChallanForm = (props) => {
               onChange={nameChangeHandler}
             />
           </div>
-         
+
           <div className="new-expense__control">
             <label>Amount</label>
             <input

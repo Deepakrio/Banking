@@ -7,7 +7,7 @@ import Loan from './Components/Loan';
 import Services from './Components/Mutal';
 import Home from './Components/Home';
 import Mutal from './Components/Mutal';
-import Fd from './Components/Fd';
+import Addstudent from './Components/AddFunds';
 import Demat from './Components/Demat';
 import CreateAcc from './Components/CreateAcc';
 import Footer from './Components/Footer';
@@ -31,13 +31,13 @@ function App() {
          <Route exact path="passbook" element={<PassBook/>}/>
          <Route exact path="service" element={<Services/>}/>
          <Route exact path="mutual" element={<Mutal/>}/>
-         <Route exact path="fd" element={<Fd/>}/>
+         <Route exact path="fd" element={<Addstudent/>}/>
          <Route exact path="demat" element={<Demat/>}/>
          <Route exact path="create" element={<CreateAcc/>}/> 
           <Route exact path="signup" element={<Signup/>}/>
 
        </Routes>
-{/* <Footer/> */}
+<Footer/>
      </div> 
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Data from '../data/FixedData.json'
-// import './Styles/FixedDeposit.css'
+import './Styles/FixedDeposit.css'
 
 const FixedDeposit =() => {
 
@@ -8,7 +8,7 @@ const FixedDeposit =() => {
   {
     return(
     
-      <div className="col-md-3 ">
+      <div className="col-md-3 cardfd">
         <div className="card FixedDeposit cardbg" key={index}>
           <div className="card-body">
          <img src={cards.path} class="img" />

@@ -43,9 +43,9 @@ const Infocard =() => {
 
   return(
     <>
-    <div className="container-fluid mutxt">
-    <center> <h1 >Our Services</h1></center> 
-    <center>  <i> <p>Get Loans with Attractive ROI and EMI</p></i><br></br></center>
+    <div className="container-fluid mutxt infocard">
+    <center> <h1 className='infotxt' >Our Services</h1></center> 
+    <center>  <i> <p className='infotxt'>Get Loans with Attractive ROI and EMI</p></i><br></br></center>
     <div className='row'>
       {Data.map(InfocardCards)}
 

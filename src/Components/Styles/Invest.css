@@ -19,3 +19,9 @@
     mix-blend-mode: darken;
 }
 
+.cardhold
+{
+    position: relative;
+    left: 0px;
+}
+

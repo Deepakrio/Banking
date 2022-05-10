@@ -1,70 +1,50 @@
-// import React from 'react'
-// import './Styles/CreateAcc.css';
+import React, { Component,useState } from "react";
+import Cloudimg from "./assets/3.2.png";
+import "./Styles/CreateAcc.css";
+import Sideimg from "./assets/5.png";
+import logimg from "./assets/login.png";
+import { useNavigate } from "react-router-dom";
 
 
-// export default function CreateAcc() {
-//   return (
-//      <>
-
-//       <div className='container'>
-//           <h1>Login</h1>
-// <form>
-//   <div className="mb-3">
-//     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-//     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-//     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-//   </div>
-//   <div className="mb-3">
-//     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-//     <input type="password" className="form-control" id="exampleInputPassword1"/>
-//   </div>
-//   <div className="mb-3 form-check">
-//     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-//     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-//   </div>
-//   <button type="submit" className="btn btn-primary btnctrl">Submit</button>
-// </form> 
-// </div>
-// </>
-//  )
-// }
-
-
-import React, { Component } from "react";
-import Cloudimg from './assets/3.2.png';
-import './Styles/CreateAcc.css';
-import Sideimg from './assets/5.png';
-import logimg from './assets/login.png'
-import { useNavigate } from 'react-router-dom'
-
-
- function CreateAcc() {
+function CreateAcc() {
   let navigate = useNavigate();
+  
+
   return (
-  <div className="d-grid mt-3"> 
-                {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
-                 <button type="submit" onClick={() => {navigate("/home")}}  id="loginbtn" class="btn btn-block btn-primary">Submit</button>            
-              </div>  )
+    <div className="d-grid mt-3">
+      {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
+      <button
+        type="submit"
+        onClick=
+        {() => {
+          navigate("/home");
+        }}
+        id="loginbtn"
+        class="btn btn-block btn-primary"
+      >
+        Submit
+      </button>
+    </div>
+  );
 }
 
-
-const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
+const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
 const validation = ({ error, ...rest }) => {
   let checkValidation = false;
 
-  Object.values(error).forEach(val => {
+  Object.values(error).forEach((val) => {
     if (val.length > 0) {
-      checkValidation = false
+      checkValidation = false;
     } else {
-      checkValidation = true
+      checkValidation = true;
     }
   });
 
-  Object.values(rest).forEach(val => {
+  Object.values(rest).forEach((val) => {
     if (val === null) {
-      checkValidation = false
+      checkValidation = false;
     } else {
-      checkValidation = true
+      checkValidation = true;
     }
   });
 
@@ -72,35 +52,33 @@ const validation = ({ error, ...rest }) => {
 };
 
 export default class Form extends Component {
-
-
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      name: '',
-      email: '',
-      password: '',
+      name: "",
+      email: "",
+      password: "",
       error: {
-        name: '',
-        email: '',
-        password: ''
-      }
-    }
+        name: "",
+        email: "",
+        password: "",
+      },
+    };
   }
 
-  onFormSubmit = event => {
+  onFormSubmit = (event) => {
     event.preventDefault();
 
     if (validation(this.state)) {
-      console.log(this.state)
+      console.log(this.state);
     } else {
       console.log("Error occured");
     }
   };
 
-  formObject = event => {
-    //collaboration and debugging purposes, it’s always better to write the prevent function just below your function declaration. 
+  formObject = (event) => {
+    //collaboration and debugging purposes, it’s always better to write the prevent function just below your function declaration.
     //That way you won’t cause a bug by forgetting to put the prevent function.
     event.preventDefault();
 
@@ -112,9 +90,7 @@ export default class Form extends Component {
         error.name = value.length < 5 ? "Name should be 5 characters long" : "";
         break;
       case "email":
-        error.email = regularExpression.test(value)
-          ? ""
-          : "Email is not valid";
+        error.email = regularExpression.test(value) ? "" : "Email is not valid";
         break;
       case "password":
         error.password =
@@ -124,32 +100,39 @@ export default class Form extends Component {
         break;
     }
 
+    // const OnSubmitData = () =>
+    // {
+    //   this.setState("");
+    //             navigate("/home");
+
+    // }
+
     this.setState({
       error,
-      [name]: value
-    })
+      [name]: value,
+    });
   };
 
   render() {
     const { error } = this.state;
 
     return (
-
-      
       <div className="row ">
-
         <div className="col-md-4 simg">
-        <img src={logimg} alt='Contact Image' id='simg'></img>
+          <img src={logimg} alt="Contact Image" id="simg"></img>
         </div>
-        
+
         <div className="container-fluid col-md-4 fullcard ">
-        <br></br><br></br><br></br>                      <br></br><br></br><br></br>
-
-
+          <br></br>
+          <br></br>
+          <br></br> <br></br>
+          <br></br>
+          <br></br>
           <div className="card mt-5 login">
-           <center><h1>Login</h1></center> 
+            <center>
+              <h1>Login</h1>
+            </center>
             <form className="card-body login " onSubmit={this.onFormSubmit}>
-
               <div className="form-group mb-3">
                 <input
                   required
@@ -158,7 +141,12 @@ export default class Form extends Component {
                   placeholder="Username"
                   id="loginame"
                   onChange={this.formObject}
-                  className={error.name.length > 0 ? "is-invalid form-control" : "form-control"} />
+                  className={
+                    error.name.length > 0
+                      ? "is-invalid form-control"
+                      : "form-control"
+                  }
+                />
 
                 {error.name.length > 0 && (
                   <span className="invalid-feedback">{error.name}</span>
@@ -172,8 +160,13 @@ export default class Form extends Component {
                   name="email"
                   placeholder="Email"
                   id="loginemail"
-                  className={error.email.length > 0 ? "is-invalid form-control" : "form-control"}
-                  onChange={this.formObject} />
+                  className={
+                    error.email.length > 0
+                      ? "is-invalid form-control"
+                      : "form-control"
+                  }
+                  onChange={this.formObject}
+                />
 
                 {error.email.length > 0 && (
                   <span className="invalid-feedback">{error.email}</span>
@@ -187,30 +180,35 @@ export default class Form extends Component {
                   name="password"
                   placeholder="Password"
                   id="loginpwd"
-                  className={error.password.length > 0 ? "is-invalid form-control" : "form-control"}
-                  onChange={this.formObject} />
+                  className={
+                    error.password.length > 0
+                      ? "is-invalid form-control"
+                      : "form-control"
+                  }
+                  onChange={this.formObject}
+                />
 
                 {error.password.length > 0 && (
                   <span className="invalid-feedback">{error.password}</span>
                 )}
               </div>
-                  <CreateAcc/>
-              {/* <div className="d-grid mt-3"> */}
-                {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
-                {/* <button type="submit" onClick={() => {navigate("/home")}}  id="loginbtn" class="btn btn-block btn-primary">Submit</button>            
+              <CreateAcc />
+              {/* <div className="d-grid mt-3">
+              <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button>
+              <button type="submit" onClick={() => {navigate("/home")}}  id="loginbtn" class="btn btn-block btn-primary">Submit</button>            
               </div> */}
               {/* <div className="col-md-4 cloudimg">
               <img src={Cloudimg} alt='Contact Image' id='cimg'></img>
               </div> */}
             </form>
           </div>
-          <br></br><br></br><br></br>                      <br></br><br></br><br></br>
-
-
+          <br></br>
+          <br></br>
+          <br></br> <br></br>
+          <br></br>
+          <br></br>
         </div>
       </div>
-    
-      
     );
   }
 }

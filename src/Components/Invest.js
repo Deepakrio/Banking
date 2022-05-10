@@ -22,7 +22,7 @@ const Invest =() => {
     return(
     
       <div className="col-md-3 ">
-        <div className="card Invest cardbgm" key={index}>
+        <div className="card Invest cardbgm cardhold" key={index}>
           <div className="card-body">
          <img src={cards.path} class="imgm" />
           <h1 className="card-titlem">{cards.type}</h1>

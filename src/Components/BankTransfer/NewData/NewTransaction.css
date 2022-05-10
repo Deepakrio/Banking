@@ -8,6 +8,7 @@
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
     position: relative;
+    position: relative;
   }
   
   .new-expense button {
@@ -37,3 +38,5 @@
   .new-expense button.alternative:active {
     background-color: #ddb3f8;
   }
+
+  

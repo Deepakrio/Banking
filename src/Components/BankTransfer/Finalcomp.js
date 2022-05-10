@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logimg from '../assets/login.png'
 
 import Transaction from "../BankTransfer/ExistingData/Transaction";
 import NewTransaction from "./NewData/NewTransaction";
@@ -51,11 +52,13 @@ const App = () => {
 
   return (
     <div>
+          <div className="col-md-4 simg">
+          <img src={logimg} alt="Contact Image" id="simg"></img>
+        </div>
       <br></br>
       <br></br>
       <br></br>
       <NewTransaction onAddExpense={addExpenseHandler} />
-      <br></br>
       <br></br>
       <br></br>
       <Transaction items={expenses} />

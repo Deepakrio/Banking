@@ -37,3 +37,16 @@
     right: 35px;
     width: 100px;
 }
+
+.infocard
+{
+    position: relative;
+    left: 220px;
+    top: 35px;
+}
+
+.infotxt
+{
+    position: relative;
+    right: 35vmin;
+}

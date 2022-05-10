@@ -13,8 +13,12 @@ const NewTransaction = (props) => {
   };
 
   return (
+    <div>
     <div className='new-expense'>
+    
       <ChallanForm onSaveExpenseData={saveExpenseDataHandler} />
+    
+    </div>
     </div>
   );
 };
