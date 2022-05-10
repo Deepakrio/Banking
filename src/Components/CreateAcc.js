@@ -152,7 +152,7 @@ export default class Form extends Component {
                   <span className="invalid-feedback">{error.name}</span>
                 )}
               </div>
-
+{/* 
               <div className="form-group mb-3">
                 <input
                   required
@@ -171,7 +171,7 @@ export default class Form extends Component {
                 {error.email.length > 0 && (
                   <span className="invalid-feedback">{error.email}</span>
                 )}
-              </div>
+              </div> */}
 
               <div className="form-group mb-3">
                 <input

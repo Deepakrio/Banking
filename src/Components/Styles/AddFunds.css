@@ -20,12 +20,14 @@
 {
 position: relative;
 right: 70px;
+border-radius: 15px;
 }
 
 #submit
 {
 position: relative;
 right: 170px;
+border-radius: 15px;
 }
 
 .ip
