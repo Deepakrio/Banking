@@ -19,17 +19,19 @@ Addstudent=()=>{
   axios.post('https://localhost:44315/Api/Funds', {Scheme:this.state.Scheme,  
   Amount:this.state.Amount,Duration:this.state.Duration, Mode:this.state.Mode,InvType:this.state.InvType})  
 .then(json => {  
-if(json.data.Status==='Success'){  
-  console.log(json.data.Status);  
-  alert("Data Save Successfully");  
-this.props.history.push('/passbook')  
-// /Studentlist
-}  
-else{  
-alert('Request Sent Succesfully');  
-debugger;  
-this.props.history.push('/passbook')  
-}  
+// if(json.data.Status==='Success'){  
+//   console.log(json.data.Status);  
+//   alert("Data Save Successfully");  
+// this.props.history.push('/Studentlist')  
+// // 
+// }  
+// else{  
+// alert('Request Sent Succesfully');  
+// debugger;  
+// this.props.history.push('/Studentlist')  
+// }  
+
+alert("Investment Sucessfull");
 })  
 }  
    

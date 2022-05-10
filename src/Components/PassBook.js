@@ -63,7 +63,7 @@ import React, { Component } from 'react';
 import axios from 'axios';  
 import Table from './Table'; 
 import AddFunds from './AddFunds';
-import './Styles/passbook.css'
+import './Styles/passbook.css';
 // import 'bootstrap/dist/css/bootstrap.css'; 
   
 export default class Studentlist extends Component {  
@@ -112,6 +112,7 @@ export default class Studentlist extends Component {
             </tbody>  
           </table>  
           <AddFunds/>
+         
         </div>  
       );  
     }  
