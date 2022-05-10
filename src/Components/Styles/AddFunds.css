@@ -30,6 +30,20 @@ right: 170px;
 border-radius: 15px;
 }
 
+.blankHolder{
+    border: 2px white solid;
+    background-color: white;
+    transform: rotate(90deg);
+    position: relative;
+    width: 400px;
+    bottom: 700px;
+    left: 730px;
+}
+
+.blankHolder h1{
+    color: white;
+}
+
 .ip
 {
     height: 50px;

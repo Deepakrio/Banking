@@ -32,6 +32,7 @@ Addstudent=()=>{
 // }  
 
 alert("Investment Sucessfull");
+window.location.reload(false)
 })  
 }  
    
@@ -98,6 +99,10 @@ return (
       </Col>  
     </Form>  
     <br></br><br></br><br></br>
+    <div className='blankHolder'>
+      <h1>dsdaasdasddasdasdasdsadsdada</h1>
+    </div>
+
   </Container>  
 );  
 }  
