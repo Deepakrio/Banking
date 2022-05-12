@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./ChallanForm.css";
 
+
+
 const ChallanForm = (props) => {
   const [enteredName, setenteredName] = useState("");
   const [enteredAccno, setenteredAccno] = useState("");
@@ -43,7 +45,14 @@ const ChallanForm = (props) => {
     //   enteredDate: event.target.value,
     // });
   };
-
+  const getDateTime = () => {
+    let tempDate = new Date();
+    let date = tempDate.getFullYear() + '-' + (tempDate.getMonth()+1) + '-' + tempDate.getDate() +' '+ tempDate.getHours()+':'+ tempDate.getMinutes()+':'+ tempDate.getSeconds(); 
+    const currDate = "Current Date= "+date;
+    return (
+       {currDate}
+    );
+  }
   const submitHandler = (event) => {
     event.preventDefault();
 
@@ -104,8 +113,8 @@ const ChallanForm = (props) => {
             <label>Date</label>
             <input
               type="date"
-              min="2022-05-10"
-              max="2022-05-10"
+              min="2022-05-12"
+              max="2022-05-12"
               value={enteredDate}
               onChange={dateChangeHandler}
             />

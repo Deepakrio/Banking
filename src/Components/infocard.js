@@ -16,11 +16,15 @@ import { useNavigate } from 'react-router-dom'
 
 
 const Infocard =() => {
+
+  const reqSentHandler = () =>
+  {
+    alert("Request Sent Successfully")
+  }
   
 
   const InfocardCards =(cards,index) =>
   {
-    let navigate = useNavigate();
     return(
     
       <div className="col-md-3 ">
@@ -32,7 +36,7 @@ const Infocard =() => {
             <h4 className="card-title">{cards.time}</h4>
             <br></br>
         
-            <button type="button" id='ibtn' onClick={() => {navigate("/loan")}} class="btn btn-primary">Apply Now</button>            
+            <button type="button" id='ibtn' onClick={reqSentHandler} class="btn btn-primary">Apply Now</button>            
             </center> 
           </div>
         </div>

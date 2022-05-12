@@ -21,3 +21,13 @@ html
 {
     color:white;
 }
+
+.para
+{
+    color: black;
+}
+
+.para:hover
+{
+color: white;
+}

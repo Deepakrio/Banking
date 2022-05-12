@@ -1,5 +1,6 @@
 import React from "react";
 import './Styles/Navbar.css'
+import Login from './CreateAcc'
 import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 
 
@@ -10,7 +11,10 @@ export default function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top">
   <div className="container-fluid">
     {/* <a className="navbar-brand" href="/">Dlithe Bank Inc</a> */}
-    <Link to="home" className="navtitle">DlitheBank.Inc</Link>
+    <Link to="home" className="navtitle">
+ 
+ 
+ <i class="fa-solid fa-building-columns"></i> &nbsp;Dlithe Bank</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -56,7 +60,6 @@ export default function NavBar() {
     </div>
   </div>
 </nav>
-
-    </div>
+</div>
   )
 }

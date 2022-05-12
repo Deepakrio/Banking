@@ -12,6 +12,8 @@ function CreateAcc() {
 
   return (
     <div className="d-grid mt-3">
+         
+
       {/* <button type="submit" className="btn btn-block btn-primary" id="loginbtn">Submit</button> */}
       <button
         type="submit"

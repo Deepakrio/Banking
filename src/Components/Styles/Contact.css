@@ -109,7 +109,7 @@ form
     position: relative;
     font-size: 10px;
     /* right: 50px; */
-    color: black;
+    color: red;
     z-index: 2;
 }
 
@@ -117,8 +117,8 @@ form
 {
     position: relative;
     font-size: 10px;
-    right: 100px;
-    color: black;
+    right: 0px;
+    color: red;
     z-index: 2;
 }
 
@@ -126,9 +126,9 @@ form
 {
     position: relative;
     font-size: 10px;
-    top: 10px;
-    right: 230px;
-    color: black;
+    top: 0px;
+    right: 0px;
+    color: red;
     z-index: 2;
 
 }
@@ -138,8 +138,8 @@ form
     position: relative;
     font-size: 10px;
     top: 10px;
-    right: 70px;
-    color: black;
+    right: 0px;
+    color: red;
     z-index: 2; 
 }
 
@@ -148,8 +148,8 @@ form
     position: relative;
     font-size: 10px;
     top: 10px;
-    right: 140px;
-    color: black;
+    right: 0px;
+    color: red;
     z-index: 2;
 }
 #cimg
