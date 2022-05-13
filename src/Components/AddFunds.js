@@ -209,9 +209,9 @@ class Addstudent extends React.Component {
         <br></br>
         <br></br>
         <br></br>
-        <div className="blankHolder">
+        {/* <div className="blankHolder">
           <h1>dsdaasdasddasdasdasdsadsdada</h1>
-        </div>
+        </div> */}
       </Container>
     );
   }

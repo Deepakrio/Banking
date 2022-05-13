@@ -34,9 +34,9 @@ export default function NavBar() {
           </a>
           <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
           <li className="nav-link active" aria-current="page"><Link to="mutual" className="navText">Fund Transfer</Link></li> 
-          {/* <li className="nav-link active" aria-current="page"><Link to="fd" className="navText">Fixed Deposit</Link></li> 
-            <li><hr className="dropdown-divider"/></li>
-            <li className="nav-link active" aria-current="page"><Link to="demat" className="navText">Demat</Link></li>  */}
+          {/* <li className="nav-link active" aria-current="page"><Link to="edit" className="navText">Edit Funds</Link></li>  */}
+            {/* <li><hr className="dropdown-divider"/></li> */}
+            {/* <li className="nav-link active" aria-current="page"><Link to="demat" className="navText">Demat</Link></li>  */}
           </ul>
         </li>
         <li className="nav-item pl-5 mt-3">

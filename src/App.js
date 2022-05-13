@@ -12,6 +12,8 @@ import Demat from './Components/Demat';
 import CreateAcc from './Components/CreateAcc';
 import Footer from './Components/Footer';
 import Signup from './Components/Signup';
+import EditFunds from './Components/EditFunds';
+import ViewFunds from './Components/ViewFunds';
 // import PassBookInfo from './Components/PassBookInfo';
 import PassBook from './Components/PassBook';
 import React from 'react';
@@ -31,8 +33,8 @@ function App() {
          <Route exact path="passbook" element={<PassBook/>}/>
          <Route exact path="service" element={<Services/>}/>
          <Route exact path="mutual" element={<Mutal/>}/>
-         <Route exact path="fd" element={<Addstudent/>}/>
-         <Route exact path="demat" element={<Demat/>}/>
+         <Route exact path="edit/:Id" element={<EditFunds/>}/>
+         <Route exact path="demat/:Id" element={<ViewFunds/>}/>
          <Route exact path="create" element={<CreateAcc/>}/> 
           <Route exact path="signup" element={<Signup/>}/>
 
