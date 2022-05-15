@@ -78,3 +78,96 @@
     z-index: -1;
     right: 200px;
 }
+
+
+/* ************************* media queries***************************** */
+
+/* targeting mobile devices */
+@media only screen and (max-width: 600px) {
+
+.login
+{
+    position: relative;
+    height: 300px;
+    background-color: #f5f5ff  ;
+    border: none;
+    bottom: 700px;
+    left: 0px;
+}
+
+.login h1
+{
+    text-decoration: underline #c1bbcd; 
+}
+
+.fullcard
+{
+    position: relative;
+    right: 0px;
+    top: 30px;
+
+
+}
+
+
+
+#loginame
+{
+    position: relative;
+    width: 330px;
+    height: 45px;
+    left: 30px;
+    bottom: 40px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+    #loginemail
+    {
+        position: relative;
+        width: 330px;
+        height: 45px;
+        left: 30px;
+        bottom: 40px;
+        border-color: transparent;
+        background-color: #e4dcf4; 
+    }
+
+    .invalid-feedback
+    {
+        position: relative;
+        bottom: 40px;
+    }
+#loginpwd
+{
+    position: relative;
+    width: 330px;
+    height: 45px;
+    left: 30px;
+    bottom: 40px;
+    border-color: transparent;
+    background-color: #e4dcf4;
+}
+
+#loginbtn
+{
+    position: relative;
+    height: 50px;
+    width: 150px;
+    left: 7vmin;
+   bottom: 0px;
+
+    border-radius: 50px;
+}
+
+.cloudimg
+{
+    position: relative;
+    top: 9vmin;
+    z-index: -1;
+    right: 200px;
+}
+
+
+
+}

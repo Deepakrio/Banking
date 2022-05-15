@@ -34,7 +34,7 @@ const Services = (props) => {
         <table className="table table-bordered  mutualTable">
           <thead>
             <tr Id="trstyle">
-              <th scope="col">Id</th>
+              <th scope="col">SL.No</th>
               <th scope="col">Scheme</th>
               <th scope="col">Amount</th>
               <th scope="col">Duration</th>

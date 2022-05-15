@@ -1,62 +1,52 @@
-#mutualTxt
-{
-    position: relative;
-    font-size: 40px;
-    font-weight: bold;
-    opacity: 0.6;
+#mutualTxt {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
-.mutualTable
-{
-    position: relative;
-    left: 230px;
-    width: 800px;
+.mutualTable {
+  position: relative;
+  left: 230px;
+  width: 800px;
 }
 
-.btndngr
-{
-    position: relative;
-    height: 30px;
-    width: 80px;
-    right: 60px;
-    background-color: #241c5c;
-   
+.btndngr {
+  position: relative;
+  height: 30px;
+  width: 80px;
+  right: 60px;
+  background-color: #241c5c;
+  border-radius: 50px;
 }
 
-.linktxt
-{
-    color: white;
-    text-align: center;
-    padding-bottom: 2px;
+.linktxt {
+  color: white;
+  text-align: center;
+  padding-bottom: 2px;
 }
 
-.linktxt:hover
-{
-    color: white;
-    text-decoration: none;
+.linktxt:hover {
+  color: white;
+  text-decoration: none;
 }
 
+.btndngr1 {
+  bottom: 40px;
+  left: 40px;
+  position: relative;
+  height: 30px;
+  width: 80px;
+  background-color: #d15523;
 
-.btndngr1
-{
-    bottom: 40px;
-left: 40px;
-    position: relative;
-    height: 30px;
-    width: 80px;
-    background-color: #d15523;
-    
-    
+  border-radius: 50px;
 }
 
-#trstyle
-{
-    background-color:#847ce4;
-    width: 700px;
+#trstyle {
+  background-color: #847ce4;
+  width: 700px;
 }
 
-#tbstyle
-{
-    background-color: #ebe4f9;
-    
+#tbstyle {
+  background-color: #ebe4f9;
 }

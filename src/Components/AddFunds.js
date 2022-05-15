@@ -87,9 +87,9 @@ class Addstudent extends React.Component {
                   </option>
                   <option>Axis Small Cap Fund</option>
                   <option>HDFC Sensex Index Funds </option>
-                  <option>Parag Pariek Multi Cap Fund</option>
+                  <option>Parag Pariek M-Cap Fund</option>
                   <option>Axis BlueChip Funds</option>
-                  <option>Canara Rebocco Bluechip Fund</option>
+                  <option>Canara Bluechip Fund</option>
                 </select>
               </Col>
             </FormGroup>

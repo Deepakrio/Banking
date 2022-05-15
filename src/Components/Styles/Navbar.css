@@ -73,8 +73,9 @@ button
 }
 
 
-/* ***************************Media Queries**************************** */
+/* ************************* media queries***************************** */
 
+ /* targeting mobile devices */
 @media only screen and (max-width: 600px) {
     
         .nav
@@ -90,10 +91,14 @@ button
         bottom: 1rem;
         }
 
-        .navbar-brand
+        .navtitle
         {
             position: relative;
-            margin-left: 0px;
-            padding-left: 0px;
+            right: 350px;
         }
-}
+
+        .navbar-toggler{
+            position: relative;
+            right: 100px;
+        }
+} 

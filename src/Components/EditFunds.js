@@ -63,7 +63,7 @@ const EditFunds = () => {
             <Col sm={10}>
               {/* <Input className='ip' type="text" name="Scheme" onChange={this.handleChange} value={this.state.Scheme} placeholder="Enter Scheme" />   */}
               <select
-                name="Scheme"
+                
                 class="form-control ip"
                 onChange={(e) => handleChange(e)}
                 value={Scheme}
@@ -76,8 +76,8 @@ const EditFunds = () => {
                 <option>Axis Small Cap Fund</option>
                 <option>HDFC Sensex Index Funds </option>
                 <option>Parag Pariek Multi Cap Fund</option>
-                <option>Axis BlueChip Funds</option>
-                <option>Canara Rebocco Bluechip Fund</option>
+                {/* <option>Axis BlueChip Funds</option>
+                <option>Canara Rebocco Bluechip Fund</option> */}
               </select>
             </Col>
           </FormGroup>
